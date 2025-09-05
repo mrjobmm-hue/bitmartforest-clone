@@ -1,23 +1,24 @@
 body {
-    background: #141e30;
-    background: linear-gradient(135deg, #243b55 0%, #141e30 100%);
-    color: #d2e5f6;
+    background: #121212;
+    color: #f8f9fa;
 }
-
-.bg-gradient-primary {
-    background: linear-gradient(90deg, #0f2027 0%, #2c5364 100%);
-}
-
 .card {
-    background: rgba(44, 83, 100, 0.9);
-    border: none;
+    background: #22232a;
     border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
 }
-
-.btn-success, .btn-warning {
-    box-shadow: 0 2px 8px rgba(0,255,150,0.2);
+.btn-warning, .btn-success, .btn-outline-light, .btn-outline-info {
+    font-weight: bold;
+    letter-spacing: .5px;
 }
-
-.navbar, footer {
-    background: #112c41 !important;
+.navbar-brand {
+    letter-spacing: 2px;
+}
+.display-4, .display-6 {
+    color: #ffc107;
+}
+.list-group-item {
+    background: transparent;
+    color: #fff;
+    border: none;
 }
