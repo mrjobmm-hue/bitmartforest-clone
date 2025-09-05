@@ -8,17 +8,34 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        // Example data for demonstration
+        $balance = 12345.67;
+        $cryptoPrices = [
+            ['symbol' => 'BTC', 'price' => 65432.10],
+            ['symbol' => 'ETH', 'price' => 3897.45],
+            ['symbol' => 'BNB', 'price' => 534.12],
+        ];
+
+        return view('dashboard', compact('balance', 'cryptoPrices'));
     }
 
-    public function dashboard()
+    public function transactions()
     {
-        $balance = 1250.38;
-        $cryptoPrices = [
-            ['symbol' => 'BTC', 'price' => 42500.12],
-            ['symbol' => 'ETH', 'price' => 2950.50],
-            ['symbol' => 'USDT', 'price' => 1.00],
-        ];
-        return view('dashboard', compact('balance', 'cryptoPrices'));
+        return view('transactions');
+    }
+
+    public function wallet()
+    {
+        return view('wallet');
+    }
+
+    public function referral()
+    {
+        return view('referral');
+    }
+
+    public function support()
+    {
+        return view('support');
     }
 }
