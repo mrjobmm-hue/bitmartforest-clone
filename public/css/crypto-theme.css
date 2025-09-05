@@ -1,0 +1,23 @@
+body {
+    background: #141e30;
+    background: linear-gradient(135deg, #243b55 0%, #141e30 100%);
+    color: #d2e5f6;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(90deg, #0f2027 0%, #2c5364 100%);
+}
+
+.card {
+    background: rgba(44, 83, 100, 0.9);
+    border: none;
+    border-radius: 1rem;
+}
+
+.btn-success, .btn-warning {
+    box-shadow: 0 2px 8px rgba(0,255,150,0.2);
+}
+
+.navbar, footer {
+    background: #112c41 !important;
+}
